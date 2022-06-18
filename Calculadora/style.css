@@ -1,0 +1,54 @@
+body{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculadora{
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+    width: 240px;
+}
+
+h1{
+    text-align: center;
+}
+
+.mostrar-resultado input{
+    height: 40px;
+    margin: 5px;
+    width: 90%;
+}
+
+.interacao{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.numeros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px;
+}
+
+.primeira-linha .segunda-lina .terceira-linha .quarta-linha{
+    display: flex;
+}
+
+.operadores{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+}
+
+button{
+    font-size: 36px;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+}
+
