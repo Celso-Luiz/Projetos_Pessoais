@@ -1,15 +1,2 @@
-soma(){
-
-}
-
-subtracao(){
-    
-}
-
-multiplicacao(){
-    
-}
-
-divicao(){
-    
+soma(num1, num2){
 }
