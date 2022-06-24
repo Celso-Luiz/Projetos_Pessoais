@@ -12,37 +12,37 @@
     <div class="calculadora">
         
         <div class="mostrar-resultado">
-            <input type="text" disabled="">
+            <input type="text" id="resul" disabled="">
         </div>
         <div class="interacao">
             <div class="numeros">
                 
                 <div class="primeira-linha">
-                    <button onclick="insert">9</button>
-                    <button onclick="insert">8</button>
-                    <button onclick="insert">7</button>
+                    <button id="inserir" value="9" onchange="inserirNum()">9</button>
+                    <button id="inserir" value="8" onchange="inserirNum()">8</button>
+                    <button id="inserir" value="7" onchange="inserirNum()">7</button>
                 </div >
                 <div class="segunda-linha">
-                    <button onclick="insert">6</button>
-                    <button onclick="insert">5</button>
-                    <button onclick="insert">4</button>
+                    <button id="inserir" value="6" onchange="inserirNum()">6</button>
+                    <button id="inserir" value="5" onchange="inserirNum()">5</button>
+                    <button id="inserir" value="4" onchange="inserirNum()">4</button>
                 </div>
                 <div class="terceira-linha">
-                    <button onclick="insert">3</button>
-                    <button onclick="insert">2</button>
-                    <button onclick="insert">1</button>
+                    <button id="inserir" value="3" onchange="inserirNum()">3</button>
+                    <button id="inserir" value="2" onchange="inserirNum()">2</button>
+                    <button id="inserir" value="1" onchange="inserirNum()">1</button>
                 </div>
                 <div class="quarta-linha">
-                    <button onclick="insert">0</button>
-                    <button type="reset"  onclick="reset">C</button>
-                    <button type="submit"  onclick="resul">=</button>
+                    <button id="inserir" value="0" onchange="inserirNum()">0</button>
+                    <button id="reset" onchange="resetar()">C</button>
+                    <button id="resultado" onchange="mostrarValor()">=</button>
                 </div>
             </div>
             <div class="operadores">
-                <button onclick="soma">+</button>
-                <button onclick="subtração">-</button>
-                <button onclick="multiplicação">*</button>
-                <button onclick="divicao">/</button>
+                <button id="operador" value="+" onchange="receberOperador()">+</button>
+                <button id="operador" value="-" onchange="receberOperador()">-</button>
+                <button id="operador" value="*" onchange="receberOperador()">*</button>
+                <button id="operador" value="/" onchange="receberOperador()">/</button>
             </div>
         </div>
     </div>

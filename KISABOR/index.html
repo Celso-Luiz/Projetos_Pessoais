@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ki Sabor</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="img\logo.jpg" alt="logo">
+        </div>
+    </header>
+
+    <div class="navBar">
+        <div class="cabecalho">
+            Produtos
+        </div>
+        <div class="grupo">
+            <div class="titulo">Salgados</div>
+            <div class="conteudo">Conteudo 1</div>
+        </div>
+        <div class="grupo">
+            <div class="titulo">Bolos</div>
+            <div class="conteudo">Conteudo 2</div>
+        </div>
+        <div class="grupo">
+            <div class="titulo">Doces</div>
+            <div class="conteudo">Conteudo 3</div>
+        </div>
+        <div class="grupo">
+            <div class="titulo">Caldos</div>
+            <div class="conteudo">Conteudo 3</div>
+        </div>
+    </div> 
+
+    <div class="contatos">
+        <div class="insta">
+        <img src="img\insta.png" alt="Instagram">
+        <p><a href="https://www.instagram.com/kisabor220/" target="_blank">@Kisabor220</a></p>
+        </div>
+        <div class="whats">
+        <img src="img\whats.png" alt="WhatsApp">
+        <p>(31) 98739-7562</p>
+    </div>
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <p>&copy; Ki Sabor 2022</p>
+        </div>
+    </footer>
+
+    
+    <script type="text/javascript">
+        var corAtiva = "rgb(218, 157, 153)";
+        var corInativa = "rgb(255, 255, 255)";
+        $(function(){
+            $(".titulo").hover(
+                function(){$(this).css("background", corAtiva);},
+                function(){$(this).css("background", corInativa)}
+            );
+         
+            $(".titulo").click(function(){
+                $(".conteudo").slideUp("slow");
+                var cont = $(this).next();
+                $(cont).slideDown("pause");      
+            });
+        });
+
+    </script>
+    
+</body>
+</html>
